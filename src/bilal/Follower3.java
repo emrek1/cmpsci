@@ -1,6 +1,6 @@
 package bilal;
 
-import datastructures.Vector2;
+import datastructure.Vector2;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -29,11 +29,12 @@ public class Follower3 extends GameWindow{
         Ball ball = new Ball(pos, vel, speed);
         String input = JOptionPane.showInputDialog("enter speed");
         speed = Double.parseDouble(input);  //wrapper
-        Ball ball2 = new Ball(new Vector2(pos), new Vector2(vel), speed);        
+        Ball ball2 = new Ball(new Vector2(pos), new Vector2(vel), speed);     
         
         ball.pos.x +=3;
         pos.x +=3;
         ball2.pos.x +=3;
+        
         
         
         balls.add(ball);

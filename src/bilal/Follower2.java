@@ -1,6 +1,6 @@
 package bilal;
 
-import datastructures.Vector2;
+import datastructure.Vector2;
 import java.awt.event.MouseEvent;
 import window.GameWindow;
 
