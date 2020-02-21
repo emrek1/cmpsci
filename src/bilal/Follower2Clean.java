@@ -28,6 +28,13 @@ public class Follower2Clean extends GameWindow{
     
     
     
+    
+    
+    
+    
+    
+    
+    
     public void paint(){
         g.fillOval((int)ballpos.x, (int)ballpos.y, 50, 50);
     }

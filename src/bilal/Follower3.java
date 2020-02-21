@@ -24,11 +24,12 @@ public class Follower3 extends GameWindow{
         
         Vector2 pos = new Vector2(200, 100);
         Vector2 vel = new Vector2(100, 100);
-        double speed = 300;
+        double speed = 100;
         
         Ball ball = new Ball(pos, vel, speed);
         String input = JOptionPane.showInputDialog("enter speed");
         speed = Double.parseDouble(input);  //wrapper
+        //Ball ball2 = new Ball(pos, vel, speed);
         Ball ball2 = new Ball(new Vector2(pos), new Vector2(vel), speed);     
         
         ball.pos.x +=3;
@@ -44,6 +45,16 @@ public class Follower3 extends GameWindow{
     
     @Override
     public void update(){
+        
+        /*Ball b1 = list.get(0);
+        Vector2 disp = b1.vel.mul(dt);
+        b1.pos.addOn(disp);
+        
+        Ball b2 = list.get(1);
+        disp = b2.vel.mul(dt);
+        b2.pos.addOn(disp);
+        */
+        
         /*for(int i = 0; i<balls.size(); i++){
             Ball ball = balls.get(i);
             //ball...

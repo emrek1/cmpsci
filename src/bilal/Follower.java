@@ -7,30 +7,18 @@ import window.GameWindow;
 public class Follower extends GameWindow{
     
     double ballX = 100, ballY = 100;
-    double targetX = ballX, targetY = ballY;
-    double speed = 10;
-    
     double velX, velY;
-    
-    public void update(){
-                
-        ballX += velX;
-        ballY += velY;
-        
-    }
-    
-    public void paint(){
-        g.fillOval((int)ballX, (int)ballY, 30, 30);
-    }
+    double speed = 300;
     
     
-    public static void main(String[] args) {
-        new Follower().run();
+    public void update(){                
+        ballX += velX*(dt/1000f);
+        ballY += velY*(dt/1000f);        
     }
     
     public void mousePressed(MouseEvent e){
-        targetX = e.getX();
-        targetY = e.getY();
+        int targetX = e.getX();
+        int targetY = e.getY();
         
         double distX = targetX - ballX;
         double distY = targetY - ballY;
@@ -47,8 +35,18 @@ public class Follower extends GameWindow{
         velY = speed*Math.sin(alpha);*/
         
         
-        
-        
     }
-
+    
+    
+    
+    
+    
+    public void paint(){
+        g.fillOval((int)ballX, (int)ballY, 50, 50);
+    }
+    
+    
+    public static void main(String[] args) {
+        new Follower().run();
+    }
 }
