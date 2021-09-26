@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import window.GameWindow;
 
-
+//multiple balls
 public class Follower3Clean extends GameWindow{
     
     ArrayList<Ball> list = new ArrayList<>();

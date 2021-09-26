@@ -3,7 +3,7 @@ package bilal;
 import java.awt.event.MouseEvent;
 import window.GameWindow;
 
-
+// motion
 public class Follower extends GameWindow{
     
     double ballX = 100, ballY = 100;

@@ -4,6 +4,7 @@ package window;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
@@ -38,8 +39,14 @@ public class BasicWindow extends JFrame implements MouseListener, MouseMotionLis
         setLocation(300, 100);
         setSize(wid, heg);    
         addMouseListener(this);
-        addMouseMotionListener(this);
-        addKeyListener(this);
+        addMouseMotionListener(this);        
+        addKeyListener(this);     
+        
+        addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent ke) {  
+               if(ke.getKeyCode() == KeyEvent.VK_ESCAPE) 
+                   System.exit(0);
+            }});
     }
     
     @Override

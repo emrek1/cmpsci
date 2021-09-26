@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import window.GameWindow;
 
+//list
 public class Follower4 extends GameWindow {
         
     ArrayList<Ball> list = new ArrayList<>();

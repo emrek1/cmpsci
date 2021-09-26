@@ -3,6 +3,7 @@ package datastructure;
 
 public class Vector2 {
     
+    public static final Vector2 zero = new Vector2(0,0);
     public double x,y;
 
     public Vector2(double x, double y) {

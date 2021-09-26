@@ -4,7 +4,7 @@ import datastructure.Vector2;
 import java.awt.event.MouseEvent;
 import window.GameWindow;
 
-
+//vector objects
 public class Follower2Clean extends GameWindow{
     
     Vector2 ballpos = new Vector2(100, 100);
