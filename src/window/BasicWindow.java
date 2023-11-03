@@ -36,7 +36,7 @@ public class BasicWindow extends JFrame implements MouseListener, MouseMotionLis
         setVisible(true);
         img = createImage(wid, heg);
         g = img.getGraphics();        
-        setLocation(300, 100);
+        setLocation(100, 100);
         setSize(wid, heg);    
         addMouseListener(this);
         addMouseMotionListener(this);        
